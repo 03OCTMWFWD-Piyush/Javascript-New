@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+            /* margin: 0; */
+            padding: 0;
+            box-sizing: border-box;
+            /* border: 1px solid black; */
+            font-family: sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: aqua;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+
+        hr {
+            width: 100%;
+            border: 2px solid black;
+        }
+
+        h2 {
+            text-decoration: underline;
+            /* text-align: center; */
+            color:red; 
+            background-color:teal;
+            padding: 10px 0;
+        }
+
+        p {
+            color:darksalmon;
+            font-size: 20px;
+        }
+
+        li {
+            font-size: 20px;
+        }
+        
+    </style>
+
+
+</head>
+<body>
+    <h1>ASSIGNMENT OF JAVASCRIPT</h1>
+    <h1>MODULE:4 (Javascript Basic & DOM)</h1>
+    <hr>
+    <div class="container">
+    <h2>(1) What is JavaScript?</h2>
+    <p>JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else</p>
+    <p>JavaScript provides users to interact with web pages as per the below examples as per the requirements. Show/hide more data or user information using with the click of a button. Change the color of a button after hovering the mouse hovers over it. Slide by a carousel of images on the home webpage</p>
+    <hr>
+    <h2>(2) What is the use of isNaN funtion?</h2>
+    <p>isNAN() function in JavaScript
+        The isNaN() function accepts a value and determines whether the given value is a number or not. If so, this method returns true else it returns false. </p>
+    <p>isNaN() is a function property of the global object. For number values, isNaN() tests if the number is the value NaN</p>
+    <hr>
+    <h2>(3) What is negative Infinity?</h2>
+    <p> Similarly, there is a concept called negative infinity, which is less than any real number.</p>
+    <p>The symbol “-∞” is used to denote negative infinity. Take a close look at this visual display of infinity — positive and negative infinity ride along an infinitely long zip line in opposite directions.</p>
+    <hr>
+    <h2>(4) Which company developed javascript?</h2>
+    <p> 1. JavaScript was invented by Brendan Eich in 1995. <br>
+        2. It was developed for Netscape 2, and became the ECMA-262 standard in 1997. <br>
+        3. After Netscape handed JavaScript over to ECMA, the Mozilla foundation continued to develop JavaScript for the Firefox browser. <br>
+        4. Mozilla's latest version was 1.8.5.</p>
+    <hr>
+    <h2>(5) What are undeclared and undefined variables?</h2>
+    <p> <li>Undeclared variables are those that have not been declared or defined in the current scope </li><br>
+       <li> undefined variables are those that have been declared but not given a value. </li></p>
+     <hr>
+     <h2>(6) Write the code for adding new elements dynamically?</h2>
+     <p>The createElement() method in JavaScript can be used to create new items dynamically. <br><br>
+        The setAttribute() method is used to set the attributes of the newly generated element</p>
+     <hr>  
+     <h2>(7) What is the difference between ViewState and SessionState?</h2>
+     <p><li>A ViewState is a state of a page within a browser wherein the values of controls persist when post back operation is done. </li>
+        <li> When another page is loaded, the previous page data is no longer available. </li>
+        <li> SessionState is the data of a user session and is maintained on the server side. </li>
+    </p>
+     <hr>
+     <h2>(8) What is === operator?</h2>
+     <p> The strict equality ( === ) operator checks whether its two operands are equal, returning a Boolean result. <br><br> 
+        Unlike the equality operator, the strict equality operator always considers operands of different types to be different.
+    </p>
+     <hr>
+     <h2>(9) How can the style/class of an element be changed?</h2>
+     <p> To change all classes for an element:
+        To replace all existing classes with one or more new classes, set the className attribute: document.getElementById("MyElement").className = "MyClass"; (You can use a space-delimited list to apply multiple classes.)</p>
+     <p>Another way to alter the style of an element is by changing its class attribute. class is a reserved word in JavaScript, so in order to access the element's class, you use element. className .
+    </p>
+    <p>To change all classes for an element and to replace all the existing classes with one or more new classes, set the className attribute like this:
+        document. ...
+        document.getElementById("MyElement").className += " MyClass";
+        if ( document.getElementById("MyElement").className.match(/(?: ...
+        $('#MyElement'). ...
+        $('#MyElement').</p>
+    <hr>
+    <h2>(10) How to read and write a file using JavaScript?</h2>
+    <p>The read and write operations in a file can be done by using some commands. But the module which is required to perform these operations is to be imported. The required module is 'fs' which is called as File System module in JavaScript</p>
+    <p>readFile() and rs. writeFile() methods are used to read and write of a file using javascript. The file is read using the fs. readFile() function, which is an inbuilt method.</p>
+    <p>
+        <li>file=fopen(getScriptPath(),0); The function fread() is used for reading the file content.</li>
+        <li>str = fread(file,flength(file) ; The function fwrite() is used to write the contents to the file.</li>
+        <li>file = fopen("c:\MyFile.txt", 3);// opens the file for writing.</li></p>
+    <p>Syntax : fs.readFile( file_name, encoding, callback_function ) <br><br>
+        Parameters: <br><br>
+        filename : <br>
+        It contains the filename to be read, or the whole path if the file is saved elsewhere. <br>
+        encoding : <br>
+        It stores the file’s encoding. ‘utf8’ is the default <br>
+        callback function : <br>
+        This is a function that is invoked after the file has been read. It requires two inputs. <br>
+        err : <br>
+        If there was an error. <br>
+        Return Value : <br>
+        It returns the contents contained in the file, as well as any errors that may have occurred.</p>
+    <hr> 
+    <h2>(11)What are all the looping structures in JavaScript?</h2>  
+    <p>Basic loop structures allow you to run one or more lines of code repetitively. <br><br>
+        You can repeat the statements in a loop structure until a condition is True , until a condition is False , a specified number of times, or once for each element in a collection</p>
+    <p>Different Kinds of Loops <br>
+        for - loops through a block of code a number of times. for/in - loops through the properties of an object. for/of - loops through the values of an iterable object. while - loops through a block of code while a specified condition is true.
+    </p>
+    <p>There are four types of loops in JavaScript. <br>
+
+       1. for loop <br>
+       2. while loop <br>
+       3. do-while loop <br>
+       4. for-in loop</p>
+     <hr>
+     <h2>(12)How can you convert the string of any base to an integer in JavaScript?</h2> 
+     <p>To convert a string to an integer parseInt(), Number(), and Unary operator(+) function is used in javascript. parseInt() function returns Nan( not a number) when the string doesn't contain number. If a string with a number is sent, then only that number will be returned as the output.</p>
+     <p>The special method, provided by JavaScript, that takes an integer value (of any base which is either specified or not) and further converts the string into an integer value</p>
+     <p>Following is the syntax that a user may use to convert a string into an integer value (of any base) <br>
+        Syntax : parseInt(string_value, base) <br><br>
+        
+        Alternatively, if we don’t want to specify the base value and just want to convert our string value into an integer value itself, then we may use the following syntax also <br>
+        Syntax : parseInt(string_value)</p>
+     <hr>
+     <h2>(13) What is the function of the delete operator?</h2>
+     <p>The delete operator removes a property from an object. If the property's value is an object and there are no more references to the object, the object held by that property is eventually released automatically.</p>
+     <p>Using the delete property in loops slows down the program significantly. So, this method should only be used when it is absolutely necessary to delete an object property.</p>
+     <p>The delete operator deletes an object, an object's property, or an element from an array. The operator can also delete variables which are not declared with the var statement. delete objectName delete objectName. property delete objectName[index] delete property</p>
+     <hr>
+     <h2>(14)What are all the types of Pop up boxes available in JavaScript?</h2>
+     <p>JavaScript has three kind of popup boxes: Alert box, Confirm box, and Prompt box.</p>
+     <p>Alert Box : It is used when a warning message is needed to be produced. When the alert box is displayed to the user, the user needs to press ok and proceed. <br>
+        Syntax :- alert("your Alert here") <br><br>
+        
+        Prompt Box : It is a type of pop up box which is used to get the user input for further use. After entering the required details user have to click ok to proceed next stage else by pressing the cancel button user returns the null value. <br>
+        Syntax :- prompt("your Prompt here") <br><br>
+        
+        Confirm Box : It is a type of pop-up box that is used to get authorization or permission from the user. The user has to press the ok or cancel button to proceed. <br>
+        Syntax :- confirm("your query here")</p>
+     <hr>
+     <h2>(15) What is the use of Void (o)?</h2>
+     <p>JavaScript void 0 means returning undefined (void) as a primitive value. You might come across the term “JavaScript:void(0)” while going through HTML documents. It is used to prevent any side effects caused while inserting an expression in a web page.</p>
+    <p>Using javascript: , you can run code that does not change the current page. This, used with void(0) means, do nothing - don't reload, don't navigate, do not run any code. The "Link" word is treated as a link by the browser. For example, it's focusable, but it doesn't navigate to a new page</p>
+    <p>The old browsers which run ES3 engine, undefined is a global property and can be changed</p> 
+    <hr>
+    <h2>(16)How can a page be forced to load another page in JavaScript?</h2>
+    <p>JavaScript,can use window.location object to force a page to load another page. <br>
+        The above-mentioned syntaxes are equivalent to each other you can use any of the syntaxes for your purpose of redirecting the users to another web page</p>
+    <p>The JavaScript window. open() method opens a new browser window. Use _blank in the second parameter of window. open() method to open a URL in a new tab using JavaScript</p>
+    <hr>
+    <h2>(17)What are the disadvantages of using innerHTML in JavaScript?</h2>
+    <p>Disadvantages of innerHTML <br>
+        1. Event handlers attached to any DOM element are preserved. <br>
+        2. Replacement is done everywhere. <br>
+        3. It is not possible to append innerHTML. <br>
+        4. Breaks the document. <br>
+        5. Used for Cross-site Scripting.</p>
+    <p>The use of innerHTML creates a potential security risk for your website. Malicious users can use cross-site scripting (XSS) to add malicious client-side scripts that steal private user information stored in session cookies.</p>
+    <hr>
+</div>
+</body>
+</html>
